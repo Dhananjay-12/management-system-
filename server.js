@@ -28,9 +28,14 @@ app.use('/js', express.static(path.join(__dirname, 'assets/js')));
 app.get('/', (req, res) => {
   res.render('index');
 });
-
+app.get('/add-user', (req, res) => {
+  res.render('add_user');
+});
+app.get('/update-user', (req, res) => {
+  res.render('update_user');
+});
 //Listening to port
 
 app.listen(port, () => {
-  console.log(`Server started at : http//localhost:${port}`);
+  console.log(`Server started at  http//localhost:${port}`);
 });
