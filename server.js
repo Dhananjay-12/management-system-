@@ -24,16 +24,7 @@ app.use('/img', express.static(path.join(__dirname, 'assets/img')));
 app.use('/js', express.static(path.join(__dirname, 'assets/js')));
 
 //base route
-
-app.get('/', (req, res) => {
-  res.render('index');
-});
-app.get('/add-user', (req, res) => {
-  res.render('add_user');
-});
-app.get('/update-user', (req, res) => {
-  res.render('update_user');
-});
+app.use('/', require('./server/routes/router'));
 //Listening to port
 
 app.listen(port, () => {
