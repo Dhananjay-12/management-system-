@@ -1,27 +1,28 @@
-<!--including header portion-->
-<%-include('include/_header')%>
-<!-- /including header portion-->
 
-<!--main-->
-<main id="site-main">
-  <div class="container">
-    <div class="box-nav d-flex-justify-between">
-      <div class="filter">
-        <a href="/"><i class="fas fa-angle-double-left"></i>All Users</a>
-      </div>
-    </div>
-    <div class="form-title text-center">
-      <h2 class="text-dark">New User</h2>
-      <span class="text-light">Use the below form to create an account</span>
-    </div>
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- /include header -->
 
-    <!--including form portion-->
-    <%-include('include/_form')%>
-    <!-- /including form portion-->
-  </div>
+  <!-- Main Site -->
+  <main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+           <div class="filter">
+               <a href="/"><i class="fas fa-angle-double-left"></i> All Users</a>
+           </div>
+        </div>
+        <div class="form-title text-center">
+            <h2 class="text-dark">New User</h2>
+            <span class="text-light">Use the below form to create a new account</span>
+        </div>
+
+        <!-- add user form -->
+        <%- include('include/_form') %>
+       
+    </div>
 </main>
-<!--/main-->
+<!-- /Main Site -->
 
-<!--including footer portion-->
-<%-include('include/_footer')%>
-<!--/including footer portion-->
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->
